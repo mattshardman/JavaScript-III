@@ -40,4 +40,9 @@ console.log(example);
 
 // Principle 4
 // code example for Explicit Binding
+function explicitBinding () {
+    return this;
+}
 
+const thing = explicitBinding.call('here is this');
+console.log(thing);
