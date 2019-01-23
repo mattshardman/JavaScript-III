@@ -30,7 +30,13 @@ console.log(obj.hiBarry());
 
 // Principle 3
 // code example for New Binding
+function NewBinding (name, other) {
+    this.name = name;
+    this.other = other;
+}
 
+const example = new NewBinding('example', 'other');
+console.log(example);
 
 // Principle 4
 // code example for Explicit Binding
