@@ -11,6 +11,11 @@
 
 // Principle 1
 // code example for Window Binding
+function windowBinding() {
+    return this;
+}
+
+console.log(windowBinding());
 
 // Principle 2
 // code example for Implicit Binding
