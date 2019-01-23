@@ -50,7 +50,13 @@ CharacterStats.prototype.takeDamage = function () {
   * should inherit destroy() from GameObject through CharacterStats
   * should inherit takeDamage() from CharacterStats
 */
+function Humanoid(team, weapons, language) {
+  this.team = team;
+  this.weapons = weapons;
+  this.language = language;
+}
  
+Humanoid.prototype = {...GameStats.prototype};
 /*
   * Inheritance chain: GameObject -> CharacterStats -> Humanoid
   * Instances of Humanoid should have all of the same properties as CharacterStats and GameObject.
