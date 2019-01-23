@@ -30,6 +30,16 @@ GameObject.prototype.destroy = function () {
   * takeDamage() // prototype method -> returns the string '<object name> took damage.'
   * should inherit destroy() from GameObject's prototype
 */
+function CharacterStats(healthPoints, name) {
+  this.healthPoints = healthPoints;
+  this.name = name;
+}
+
+CharacterStats.prototype = {...GameObject.prototype};
+
+CharacterStats.prototype.takeDamage = function () {
+  return `${this.name} took damage`;
+}
 
 /*
   === Humanoid (Having an appearance or character resembling that of a human.) ===
