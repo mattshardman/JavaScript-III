@@ -19,7 +19,14 @@ console.log(windowBinding());
 
 // Principle 2
 // code example for Implicit Binding
+const obj = {
+    name: "barry",
+    hiBarry: function() {
+        return this.name;
+    }
+};
 
+console.log(obj.hiBarry());
 
 // Principle 3
 // code example for New Binding
